@@ -1,0 +1,72 @@
+.time {
+  font-size: 3em;
+  color: white;
+}
+
+button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 1em;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  color: white;
+}
+
+.lap {
+  display: block;
+  margin: 10px auto;
+}
+
+body {
+  font-family: Arial, sans-serif;
+ 
+  background-size: cover;
+  background-position: center;
+  background-blur: 5px; /* Apply a blur effect to the background */
+  position: relative;
+}
+
+.show {
+    background-image: url('background.jpg');
+    opacity: 0.75;
+}
+
+.show { 
+    position: relative; 
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('background.jpg');
+    background-size: cover;
+}
+
+.show::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.25);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0); /* Adjust the opacity to control the transparency of the overlay */
+}
+
+.stopwatch {
+  text-align: center;
+  margin-top: 150px;
+  position: relative; /* Ensure the stopwatch remains on top of the overlay */
+  z-index: 1; /* Ensure the stopwatch remains on top of the overlay */
+}
